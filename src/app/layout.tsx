@@ -5,6 +5,11 @@ import Footer from "@/components/Footer";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../../theme";
+import { Quicksand } from "next/font/google";
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   icons: {
@@ -18,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body className='bg-background-default'>
+    <html lang="en" className={quicksand.className}>
+      <body className="bg-backgroundDefault">
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <Header />
