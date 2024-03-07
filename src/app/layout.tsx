@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "../../theme";
 
 export const metadata: Metadata = {
   icons: {
@@ -16,10 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+      <body className='bg-background-default'>
+        <AppRouterCacheProvider>
+          <ThemeProvider theme={theme}>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </ThemeProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );
