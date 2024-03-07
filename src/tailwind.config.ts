@@ -4,7 +4,7 @@ import type { Config } from "tailwindcss";
 import theme from "../theme";
 
 const config: Config = {
-  content: ["./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       gridTemplateColumns: {
@@ -13,7 +13,15 @@ const config: Config = {
       gridTemplateRows: {
         "1fr-2fr": "1fr 2fr",
       },
+      borderWidth: {
+        "1": "1px",
+      },
       colors: {
+        primaryDefault: "#6C8282",
+        backgroundDark: "#D2DFE0",
+        backgroundDarker: "#96B4B5",
+        backgroundDefault: "#EBF1F1",
+
         primary: {
           main: theme.palette.primary.main,
           contrastText: theme.palette.primary.contrastText,

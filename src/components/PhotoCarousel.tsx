@@ -1,11 +1,11 @@
 "use client";
 
+import { makeStyles } from "@mui/styles";
 import * as React from "react";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
 import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 import SwipeableViews from "react-swipeable-views";
@@ -44,6 +44,18 @@ const images = [
   },
 ];
 
+const useStyles = makeStyles({
+  root: {
+    // Your other styles for the MobileStepper
+  },
+  dot: {
+    backgroundColor: "#EBF1F1", // Customize the color for inactive dots
+  },
+  dotActive: {
+    backgroundColor: "#6C8282", // Customize the color for active dots
+  },
+});
+
 function SwipeableTextMobileStepper() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
@@ -61,6 +73,8 @@ function SwipeableTextMobileStepper() {
     setActiveStep(step);
   };
 
+  const classes = useStyles(); // Get the styles you defined
+
   return (
     <Box sx={{ maxWidth: 800, flexGrow: 1, margin: "auto" }}>
       <Paper
@@ -71,7 +85,7 @@ function SwipeableTextMobileStepper() {
           alignItems: "center",
           height: 50,
           pl: 2,
-          bgcolor: "background.default",
+          bgcolor: "#EBF1F1",
         }}
       ></Paper>
       <AutoPlaySwipeableViews
@@ -83,7 +97,7 @@ function SwipeableTextMobileStepper() {
         {images.map((step, index) => (
           <div
             key={step.imgPath}
-            style={{ borderRadius: "8px", overflow: "hidden" }}
+            style={{ borderRadius: "8px 8px 0 0", overflow: "hidden" }}
           >
             {Math.abs(activeStep - index) <= 2 ? (
               <Box
@@ -101,11 +115,18 @@ function SwipeableTextMobileStepper() {
         ))}
       </AutoPlaySwipeableViews>
       <MobileStepper
+        classes={{
+          root: classes.root, // Overrides default styles related to MobileStepper root element
+          dot: classes.dot, // Overrides default styles related to dot elements
+          dotActive: classes.dotActive, // Overrides default styles related to active dots
+        }}
+        style={{ backgroundColor: "#96B4B5", borderRadius: "0 0 8px 8px" }}
         steps={maxSteps}
         position="static"
         activeStep={activeStep}
         nextButton={
           <Button
+            style={{ color: "black" }}
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
@@ -119,7 +140,12 @@ function SwipeableTextMobileStepper() {
           </Button>
         }
         backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+          <Button
+            style={{ color: "black" }}
+            size="small"
+            onClick={handleBack}
+            disabled={activeStep === 0}
+          >
             {theme.direction === "rtl" ? (
               <ChevronLeftIcon />
             ) : (
