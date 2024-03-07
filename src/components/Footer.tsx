@@ -1,7 +1,6 @@
 export default function Footer() {
   return (
     <footer>
-
       <div id="footer-contact">
         <p>&copy; 2024 DreamBox. All rights reserved.</p>
         <p>email@example.com</p>
@@ -15,7 +14,6 @@ export default function Footer() {
         <p>Find us here!</p>
         {/*location map iframe??*/}
       </div>
-
     </footer>
   );
 }

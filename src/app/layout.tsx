@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body className='bg-background-default'>
+    <html lang="en">
+      <body className="bg-background-default">
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <Header />
