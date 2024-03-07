@@ -10,7 +10,7 @@ export default function Home() {
           <p className="font-bold">
             Unlock your creativity. Capture your story.
           </p>
-          <p className="font-bold text-2xl">Welcome to DreamBox.</p>
+          <h2 className="font-bold text-2xl">Welcome to DreamBox.</h2>
           <BookNow />
         </div>
         <div className="flex m-auto px-4">

@@ -58,3 +58,12 @@ footer {
 #footer-location {
   margin-left: 15rem;
 }
+
+@media (max-width: 600px) {
+  #footer-contact {
+    margin-left: 1rem;
+  }
+  #footer-location {
+    margin-left: 1rem;
+  }
+}

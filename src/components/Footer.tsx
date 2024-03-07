@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer>
+    <footer className="mt-8">
       <div id="footer-contact">
         <p>&copy; 2024 DreamBox. All rights reserved.</p>
         <p>email@example.com</p>

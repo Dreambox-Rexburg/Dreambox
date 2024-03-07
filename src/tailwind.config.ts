@@ -20,6 +20,7 @@ const config: Config = {
         primaryDefault: "#6C8282",
         backgroundDark: "#D2DFE0",
         backgroundDarker: "#96B4B5",
+        backgroundDarkest: "#425251",
         backgroundDefault: "#EBF1F1",
 
         primary: {

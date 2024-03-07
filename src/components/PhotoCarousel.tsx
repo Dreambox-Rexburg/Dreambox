@@ -15,11 +15,11 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: "San Francisco – Oakland Bay Bridge, United States",
+    label: "Image 1",
     imgPath: "/photoCarousel/1.jpeg",
   },
   {
-    label: "Bird",
+    label: "Image 2",
     imgPath: "/photoCarousel/2.jpeg",
   },
   {
