@@ -2,8 +2,8 @@ import Button from "@mui/material/Button";
 
 export default function Home() {
   return (
-    {/*  
-    <div>
+      <p>Code is commented out</p>
+    /*<div>
       Home Page<Button variant='outlined'>test</Button>
       <p>both of the below elements are styled with tailwind classes</p>
       <div className='bg-primary-main'>
@@ -13,6 +13,6 @@ export default function Home() {
       <div className='bg-error-main'>
         my bg color is the default MUI error.main color
       </div>
-    </div>
-  );*/}
+    </div>*/
+  );
 }
