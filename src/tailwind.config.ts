@@ -7,6 +7,12 @@ const config: Config = {
   content: ["./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        "1fr-2fr": "1fr 2fr",
+      },
+      gridTemplateRows: {
+        "1fr-2fr": "1fr 2fr",
+      },
       colors: {
         primary: {
           main: theme.palette.primary.main,
