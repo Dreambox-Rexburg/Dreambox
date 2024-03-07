@@ -1,10 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
     <header>
       <div id="logo">
-        <img alt="logo" src="favicon.png"></img>
+        <Link href="/">
+          <Image alt="logo" src="/favicon.png" width={200} height={200} />
+        </Link>
       </div>
       <ul id="navigationList">
         <li>
