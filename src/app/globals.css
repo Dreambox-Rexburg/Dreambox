@@ -9,6 +9,7 @@
   --black-color: #040316;
   --white-color: #f6f9f9;
 }
+
 body {
   margin: 0;
 }
@@ -20,6 +21,7 @@ header {
   padding: 10px 20px;
   background-color: var(--primary-color);
 }
+
 #logo img {
   width: 100%;
   height: 100%;
@@ -31,15 +33,18 @@ header {
   margin: auto 1rem;
   padding: 0;
 }
+
 #navigationList li {
   margin-left: 20px;
 }
+
 #navigationList a {
   color: var(--white-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
 }
+
 #navigationList a:hover {
   color: var(--black-color);
 }
@@ -55,6 +60,7 @@ footer {
 #footer-contact {
   margin-left: 5rem;
 }
+
 #footer-location {
   margin-left: 15rem;
 }
@@ -63,6 +69,7 @@ footer {
   #footer-contact {
     margin-left: 1rem;
   }
+
   #footer-location {
     margin-left: 1rem;
   }

@@ -1,5 +1,3 @@
-import PhotoCarousel from "@/components/PhotoCarousel";
-import BookNow from "@/components/BookNow";
 import React from "react";
 import ExperienceDreambox from "@/components/ExperienceDreambox";
 import Hero from "@/app/Hero";
