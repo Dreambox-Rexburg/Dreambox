@@ -9,9 +9,11 @@ const config: Config = {
     extend: {
       gridTemplateColumns: {
         "1fr-2fr": "1fr 2fr",
+        "2fr-1fr": "2fr 1fr",
       },
       gridTemplateRows: {
         "1fr-2fr": "1fr 2fr",
+        "2fr-1fr": "2fr 1fr",
       },
       borderWidth: {
         "1": "1px",
@@ -20,7 +22,7 @@ const config: Config = {
         primaryDefault: "#6C8282",
         backgroundDark: "#D2DFE0",
         backgroundDarker: "#96B4B5",
-        backgroundDarkest: "#425251",
+        backgroundDarkest: "#4a5d5c",
         backgroundDefault: "#EBF1F1",
 
         primary: {
