@@ -1,22 +1,14 @@
 import PhotoCarousel from "@/components/PhotoCarousel";
 import BookNow from "@/components/BookNow";
 import React from "react";
+import ExperienceDreambox from "@/components/ExperienceDreambox";
+import Hero from "@/app/Hero";
 
 export default function Home() {
   return (
-    <>
-      <div className="grid grid-rows-1fr-2fr md:grid-rows-none md:grid-cols-1fr-2fr">
-        <div className="text-center w-3/4 flex flex-col items-center m-auto ">
-          <p className="font-bold">
-            Unlock your creativity. Capture your story.
-          </p>
-          <h2 className="font-bold text-2xl">Welcome to DreamBox.</h2>
-          <BookNow />
-        </div>
-        <div className="flex m-auto px-4">
-          <PhotoCarousel />
-        </div>
-      </div>
-    </>
+    <div className="mx-8 flex flex-col gap-16">
+      <Hero />
+      <ExperienceDreambox />
+    </div>
   );
 }
