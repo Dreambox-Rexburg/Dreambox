@@ -4,7 +4,7 @@ import PhotoCarousel from "@/components/PhotoCarousel";
 
 const Hero = () => {
   return (
-    <div className="grid grid-rows-1fr-2fr md:grid-rows-none md:grid-cols-2 max-w-screen-xl mx-auto">
+    <div className="grid grid-rows-1fr-2fr md:grid-rows-none md:grid-cols-2">
       <div className="text-center w-3/4 flex flex-col items-center m-auto gap-4">
         <p className="font-semibold">
           Unlock your creativity. Capture your story.

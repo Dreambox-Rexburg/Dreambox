@@ -3,7 +3,7 @@ import Card from "@/components/Card";
 
 const ExperienceDreambox = () => {
   return (
-    <div className="max-w-screen-xl m-auto">
+    <div className="m-auto">
       <h2 className="text-3xl font-bold mb-4">
         Experience DreamBox Selfie Museum
       </h2>
