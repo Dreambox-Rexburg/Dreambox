@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={quicksand.className}>
-      <body className="bg-backgroundDefault">
+    <html lang='en' className={quicksand.className}>
+      <body className='bg-background-default'>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <Header />

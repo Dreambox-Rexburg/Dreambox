@@ -11,7 +11,13 @@ const theme = createTheme({
     secondary: {
       main: "#00ff00",
     },
+    background: {
+      default: "#EBF1F1",
+    },
   },
 });
 
 export default theme;
+
+//default theme:
+// https://mui.com/material-ui/customization/default-theme/

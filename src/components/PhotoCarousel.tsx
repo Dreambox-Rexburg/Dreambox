@@ -101,7 +101,7 @@ function SwipeableTextMobileStepper() {
           >
             {Math.abs(activeStep - index) <= 2 ? (
               <Box
-                component="img"
+                component='img'
                 sx={{
                   display: "block",
                   maxWidth: "100%",
@@ -122,12 +122,12 @@ function SwipeableTextMobileStepper() {
         }}
         style={{ backgroundColor: "#96B4B5", borderRadius: "0 0 8px 8px" }}
         steps={maxSteps}
-        position="static"
+        position='static'
         activeStep={activeStep}
         nextButton={
           <Button
             style={{ color: "black" }}
-            size="small"
+            size='small'
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
           >
@@ -142,7 +142,7 @@ function SwipeableTextMobileStepper() {
         backButton={
           <Button
             style={{ color: "black" }}
-            size="small"
+            size='small'
             onClick={handleBack}
             disabled={activeStep === 0}
           >

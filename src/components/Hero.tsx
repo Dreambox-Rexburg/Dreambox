@@ -4,12 +4,12 @@ import PhotoCarousel from "@/components/PhotoCarousel";
 
 const Hero = () => {
   return (
-    <div className="grid grid-rows-1fr-2fr md:grid-rows-none md:grid-cols-2">
-      <div className="text-center w-3/4 flex flex-col items-center m-auto gap-4">
-        <p className="font-semibold">
+    <div className='grid grid-rows-1fr-2fr md:grid-rows-none md:grid-cols-2'>
+      <div className='text-center w-3/4 flex flex-col items-center m-auto gap-4'>
+        <p className='font-semibold'>
           Unlock your creativity. Capture your story.
         </p>
-        <h1 className="font-bold text-4xl">Welcome to DreamBox</h1>
+        <h1 className='font-bold text-4xl'>Welcome to DreamBox</h1>
         <BookNow />
       </div>
       <PhotoCarousel />

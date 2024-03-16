@@ -19,23 +19,21 @@ const config: Config = {
         "1": "1px",
       },
       colors: {
-        primaryDefault: "#6C8282",
-        backgroundDark: "#D2DFE0",
-        backgroundDarker: "#96B4B5",
-        backgroundDarkest: "#4a5d5c",
-        backgroundDefault: "#EBF1F1",
-
+        common: {
+          black: theme.palette.common.black,
+          white: theme.palette.common.white,
+        },
         primary: {
           main: theme.palette.primary.main,
+          light: theme.palette.primary.light,
+          dark: theme.palette.primary.dark,
           contrastText: theme.palette.primary.contrastText,
         },
         secondary: {
           main: theme.palette.secondary.main,
+          light: theme.palette.secondary.light,
+          dark: theme.palette.secondary.dark,
           contrastText: theme.palette.secondary.contrastText,
-        },
-        common: {
-          black: theme.palette.common.black,
-          white: theme.palette.common.white,
         },
         error: {
           main: theme.palette.error.main,
@@ -86,6 +84,9 @@ const config: Config = {
         background: {
           paper: theme.palette.background.paper,
           default: theme.palette.background.default,
+          dark: "#D2DFE0",
+          darker: "#96B4B5",
+          darkest: "#4a5d5c",
         },
       },
     },
@@ -93,3 +94,6 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+
+//default theme:
+// https://mui.com/material-ui/customization/default-theme/
