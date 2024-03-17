@@ -6,7 +6,7 @@ export default function Header() {
     <header>
       <div id="logo">
         <Link href="/">
-          <Image alt="logo" src="/favicon.png" width={200} height={200} />
+          <Image alt="logo" src="/favicon.png" width={200} height={200} priority />
         </Link>
       </div>
       <ul id="navigationList">
@@ -14,10 +14,10 @@ export default function Header() {
           <a href="">Home</a>
         </li>
         <li>
-          <a href="">Services</a>
+          <a href="/services">Services</a>
         </li>
         <li>
-          <a href="">About</a>
+          <a href="/about">About</a>
         </li>
         <li>
           <a href="">Blog</a>
