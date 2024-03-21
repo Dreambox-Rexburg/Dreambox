@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function About() {
   const infoItem = [
     {
@@ -23,22 +21,22 @@ export default function About() {
   ];
   return (
     <>
-      <main className='flex justify-center mx-5'>
-        <div className='container max-w-screen-lg mx-auto'>
+      <main className="flex justify-center mx-5">
+        <div className="container max-w-screen-lg mx-auto">
           {infoItem.map((item, index) => (
             <div
               key={index}
-              className='flex flex-row [&:nth-child(even)]:flex-row-reverse my-32 items-center wrap gap-4'
+              className="flex flex-row [&:nth-child(even)]:flex-row-reverse my-32 items-center wrap gap-4"
             >
-              <div className='grow-0 sm:basis-2/3'>
-                <h2 className='text-xl font-bold'>{item.title}</h2>
+              <div className="grow-0 sm:basis-2/3">
+                <h2 className="text-xl font-bold">{item.title}</h2>
                 <p>{item.content}</p>
               </div>
-              <div className='grow basis-1/3 w-full min-h-[10em] max-h-[40em] hidden sm:block'>
+              <div className="grow basis-1/3 w-full min-h-[10em] max-h-[40em] hidden sm:block">
                 <img
                   src={item.imageUrl}
                   alt={item.title}
-                  className='rounded-[2.5em]'
+                  className="rounded-[2.5em]"
                 />
               </div>
             </div>
