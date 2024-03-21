@@ -23,27 +23,28 @@ export default function About() {
   ];
   return (
     <>
-    <main className="flex justify-center">
-      <div className='container'>
-        {infoItem.map((item, index) => (
-          <div
-            key={index}
-            className='flex flex-row [&:nth-child(odd)]:flex-row-reverse my-32'
-          >
-            <div>
-              <h2 className="text-xl font-bold" >{item.title}</h2>
-              <p>{item.content}</p>
+      <main className='flex justify-center'>
+        <div className='container'>
+          {infoItem.map((item, index) => (
+            <div
+              key={index}
+              className='flex flex-row [&:nth-child(odd)]:flex-row-reverse my-32'
+            >
+              <div>
+                <h2 className='text-xl font-bold'>{item.title}</h2>
+                <p>{item.content}</p>
+              </div>
+              <div className='relative min-w-[20em] mx-10'>
+                <Image
+                  src={item.imageUrl}
+                  alt={item.title}
+                  layout='fill'
+                  objectFit='contain'
+                />
+              </div>
             </div>
-            <Image
-              src={item.imageUrl}
-              alt={item.title}
-              width={100}
-              height={100}
-              className = "mx-10"
-            />
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </main>
     </>
   );
