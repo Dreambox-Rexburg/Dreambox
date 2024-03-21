@@ -4,23 +4,23 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header>
-      <div id="logo">
-        <Link href="/">
-          <Image alt="logo" src="/favicon.png" width={200} height={200} />
+      <div id='logo'>
+        <Link href='/'>
+          <Image alt='logo' src='/favicon.png' width={200} height={200} />
         </Link>
       </div>
-      <ul id="navigationList">
+      <ul id='navigationList'>
         <li>
-          <a href="">Home</a>
+          <Link href='/'>Home</Link>
         </li>
         <li>
-          <a href="">Services</a>
+          <a href=''>Services</a>
         </li>
         <li>
-          <a href="">About</a>
+          <Link href='/about'>About</Link>
         </li>
         <li>
-          <a href="">Blog</a>
+          <a href=''>Blog</a>
         </li>
       </ul>
     </header>

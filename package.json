@@ -20,9 +20,9 @@
     "@mui/styled-engine-sc": "^6.0.0-alpha.17",
     "@mui/styles": "^5.15.12",
     "@mui/system": "^5.15.9",
-    "next": "14.1.0",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^14.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-swipeable-views": "^0.14.0",
     "styled-components": "^6.1.8"
   },
