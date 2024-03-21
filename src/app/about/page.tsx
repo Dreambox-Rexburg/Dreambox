@@ -23,14 +23,15 @@ export default function About() {
   ];
   return (
     <>
+    <main className="flex justify-center">
       <div className='container'>
         {infoItem.map((item, index) => (
           <div
             key={index}
-            className='flex flex-row [&:nth-child(odd)]:flex-row-reverse'
+            className='flex flex-row [&:nth-child(odd)]:flex-row-reverse my-32'
           >
             <div>
-              <h2>{item.title}</h2>
+              <h2 className="text-xl font-bold" >{item.title}</h2>
               <p>{item.content}</p>
             </div>
             <Image
@@ -38,10 +39,12 @@ export default function About() {
               alt={item.title}
               width={100}
               height={100}
+              className = "mx-10"
             />
           </div>
         ))}
       </div>
+      </main>
     </>
   );
 }
