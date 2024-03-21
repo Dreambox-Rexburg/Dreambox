@@ -6,7 +6,13 @@ export default function Header() {
     <header>
       <div id="logo">
         <Link href="/">
-          <Image alt="logo" src="/favicon.png" width={200} height={200} priority />
+          <Image
+            alt="logo"
+            src="/favicon.png"
+            width={200}
+            height={200}
+            priority
+          />
         </Link>
       </div>
       <ul id="navigationList">
