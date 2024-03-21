@@ -15,18 +15,18 @@ export default function Header() {
           />
         </Link>
       </div>
-      <ul id="navigationList">
+      <ul id='navigationList'>
         <li>
-          <a href="">Home</a>
+          <Link href='/'>Home</Link>
         </li>
         <li>
           <a href="/services">Services</a>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link href='/about'>About</Link>
         </li>
         <li>
-          <a href="">Blog</a>
+          <a href=''>Blog</a>
         </li>
       </ul>
     </header>
