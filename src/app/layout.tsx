@@ -28,7 +28,9 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <Header />
-            <main className="bg-backgroundDefault  mx-auto max-w-screen-lg">{children}</main>
+            <main className="bg-backgroundDefault  mx-auto max-w-screen-lg">
+              {children}
+            </main>
             <Footer />
           </ThemeProvider>
         </AppRouterCacheProvider>
