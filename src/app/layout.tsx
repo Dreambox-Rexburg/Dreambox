@@ -24,11 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={quicksand.className}>
-      <body className="bg-backgroundDark">
+      <body className="bg-customBackgroundDark">
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <Header />
-            <main className="bg-backgroundDefault  mx-auto max-w-screen-lg">
+            <main className="bg-customBackgroundDefault  mx-auto max-w-screen-lg">
               {children}
             </main>
             <Footer />
