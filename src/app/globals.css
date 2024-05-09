@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-/*HEADER*/
+/*!*HEADER*!
 header {
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,7 @@ header {
 
 #navigationList a:hover {
   color: var(--black-color);
-}
+}*/
 
 /*FOOTER*/
 footer {
