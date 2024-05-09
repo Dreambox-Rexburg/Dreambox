@@ -29,7 +29,7 @@ const config: Config = {
         // Primary Colors
         // customPrimaryDarker: "#252D2D",
         customPrimaryDark: "#414E4E",
-        // customPrimaryDefault: "#6C8282",
+        customPrimaryDefault: "#6C8282",
         customPrimaryLight: "#9ABABA",
         // customPrimaryLighter: "#C2D6D6",
 
@@ -37,7 +37,7 @@ const config: Config = {
         // customBackgroundDarker: "#96B4B5",
         customBackgroundDark: "#D2DFE0",
         customBackgroundDefault: "#EBF1F1",
-        // customBackgroundLight: "#F6F9F9",
+        customBackgroundLight: "#F6F9F9",
         // customBackgroundLighter: "#FFFFFF",
 
         // Secondary Colors

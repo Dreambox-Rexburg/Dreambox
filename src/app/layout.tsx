@@ -27,8 +27,10 @@ export default function RootLayout({
       <body className="bg-customBackgroundDark">
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
-            <Header />
-            <main className="bg-customBackgroundDefault  mx-auto max-w-screen-lg">
+            <header>
+              <Header />
+            </header>
+            <main className="bg-customBackgroundLight mx-auto max-w-screen-lg">
               {children}
             </main>
             <Footer />
