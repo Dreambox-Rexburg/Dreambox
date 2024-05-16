@@ -27,9 +27,10 @@ export default function Header() {
           <Image
             alt="logo"
             src="/favicon.png"
-            width={100}
-            height={100}
+            width={249}
+            height={209}
             priority
+            className="w-20"
           />
         </Link>
 
