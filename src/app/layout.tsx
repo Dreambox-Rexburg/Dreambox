@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
-import { ThemeProvider } from "@mui/material/styles";
-import theme from "../../theme";
 import { Quicksand } from "next/font/google";
 
 const quicksand = Quicksand({
@@ -25,17 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={quicksand.className}>
       <body className="bg-customBackgroundDark">
-        <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>
-            <header>
-              <Header />
-            </header>
-            <main className="bg-customBackgroundLight mx-auto max-w-screen-lg">
-              {children}
-            </main>
-            <Footer />
-          </ThemeProvider>
-        </AppRouterCacheProvider>
+        <header>
+          <Header />
+        </header>
+        <main className="bg-customBackgroundLight mx-auto max-w-screen-lg">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
