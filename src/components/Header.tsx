@@ -34,24 +34,24 @@ export default function Header() {
         </Link>
 
         <Bars3Icon
-          className="size-6 justify-self-end self-center cursor-pointer"
+          className="size-6 justify-self-end self-center cursor-pointer lg:hidden"
           onClick={() => setShowNav(!showNav)}
         />
 
-        {/*<ul className="flex gap-4 items-center">
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <a href="/services">Services</a>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <a href="">Blog</a>
-        </li>
-      </ul>*/}
+        <ul className="hidden lg:flex gap-4 items-center">
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <a href="/services">Services</a>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <a href="">Blog</a>
+          </li>
+        </ul>
       </div>
 
       {/*  Mobile Menu Items  */}

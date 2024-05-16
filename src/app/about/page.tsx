@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   const infoItem = [
     {
@@ -19,6 +21,7 @@ export default function About() {
       imageUrl: "/400x600.jpg",
     },
   ];
+
   return (
     <>
       <main className="flex justify-center mx-5">
@@ -33,10 +36,11 @@ export default function About() {
                 <p>{item.content}</p>
               </div>
               <div className="grow basis-1/3 w-full min-h-[10em] max-h-[40em] hidden sm:block">
-                <img
-                  src={item.imageUrl}
+                <Image
                   alt={item.title}
-                  className="rounded-[2.5em]"
+                  src={item.imageUrl}
+                  width={500}
+                  height={500}
                 />
               </div>
             </div>
