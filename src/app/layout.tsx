@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -21,14 +22,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={quicksand.className}>
-      <body className="bg-customBackgroundDark">
+      <body>
         <header>
           <Header />
         </header>
         <main className="bg-customBackgroundLight mx-auto max-w-screen-lg">
           {children}
         </main>
-        <Footer />
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

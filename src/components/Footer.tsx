@@ -1,19 +1,24 @@
 export default function Footer() {
   return (
-    <footer>
-      <div id="footer-contact">
+    <div className="grid grid-cols-2 text-left bg-customBackgroundDarker py-16 mt-8 font-bold">
+      <div className="pl-12">
         <p>&copy; 2024 DreamBox. All rights reserved.</p>
-        <p>email@example.com</p>
-        <p>(555) 555-5555</p>
-        <div id="footer-social"></div>
+        <p>(208) 541-9116</p>
+        {/*<SocialMediaIcons />*/}
       </div>
 
-      <div id="footer-location">
-        <p>Working Hours</p>
+      <div className="pl-12">
+        <p>Working Hours:</p>
         <p>Monday - Friday: 9am - 5pm</p>
         <p>Find us here!</p>
-        {/*location map iframe??*/}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.1880951928215!2d-111.82225762272407!3d43.78970987109601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540dbf7718ece7%3A0xfa0ff2ff9b30a667!2sDreamBox%20Rexburg!5e0!3m2!1sen!2sus!4v1715835652712!5m2!1sen!2sus"
+          width="400"
+          height="300"
+          className="border-none"
+          loading="lazy"
+        ></iframe>
       </div>
-    </footer>
+    </div>
   );
 }
