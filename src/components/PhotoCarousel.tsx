@@ -42,23 +42,21 @@ const images = [
 
 const PhotoCarousel = () => {
   return (
-    <Carousel>
-      <CarouselContent>
+    <Carousel className="pt-4 md:pt-0 lg:pt-0">
+      <CarouselContent className="mx-0">
         {images.map((image, index) => (
-          <CarouselItem key={index}>
+          <CarouselItem key={index} className="p-0">
             <Image
               alt={image.label}
               src={image.imgPath}
-              width={500}
-              height={500}
+              width={872}
+              height={748}
               className="rounded-xl"
               priority={index === 0}
             />
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </Carousel>
   );
 };
