@@ -1,5 +1,14 @@
 "use client";
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Image from "next/image";
+
 const images = [
   {
     label: "Image 1",
@@ -32,7 +41,26 @@ const images = [
 ];
 
 const PhotoCarousel = () => {
-  return <div></div>;
+  return (
+    <Carousel>
+      <CarouselContent>
+        {images.map((image, index) => (
+          <CarouselItem key={index}>
+            <Image
+              alt={image.label}
+              src={image.imgPath}
+              width={500}
+              height={500}
+              className="rounded-xl"
+              priority={index === 0}
+            />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+  );
 };
 
 export default PhotoCarousel;
