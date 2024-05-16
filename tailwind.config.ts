@@ -65,6 +65,10 @@ const config = {
         // customAccentLight: "#C6BCD1",
         // customAccentLighter: "#E5E1EA",
 
+        // --------------------------------------------------------------------------------------------------------
+        // READ: ShadCN Stuff under - Dont add anything under :)
+        // --------------------------------------------------------------------------------------------------------
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
