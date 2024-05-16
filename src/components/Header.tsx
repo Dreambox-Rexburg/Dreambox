@@ -17,12 +17,8 @@ export default function Header() {
   ];
 
   return (
-    <div>
-      <div
-        className="bg-customPrimaryLight px-8 py-2
-        grid grid-cols-2
-        lg:grid-cols-none lg:flex lg:justify-between"
-      >
+    <div className="bg-customPrimaryLight py-8">
+      <div className="px-6 lg:px-2 max-w-screen-lg mx-auto grid grid-cols-2 lg:grid-cols-none lg:flex lg:justify-between">
         <Link href="/">
           <Image
             alt="logo"
