@@ -17,8 +17,8 @@ export default function Header() {
   ];
 
   return (
-    <div className="bg-customPrimaryLight py-8">
-      <div className="px-6 lg:px-2 max-w-screen-lg mx-auto grid grid-cols-2 lg:grid-cols-none lg:flex lg:justify-between">
+    <div className="bg-customPrimaryLight">
+      <div className="px-6 lg:px-2 py-8 max-w-screen-lg mx-auto grid grid-cols-2 lg:grid-cols-none lg:flex lg:justify-between">
         <Link href="/">
           <Image
             alt="logo"
@@ -56,8 +56,13 @@ export default function Header() {
         <ul className="bg-customBackgroundDefault">
           {navData.map((item, index) => (
             <ul key={index} className="text-center">
-              <li className="py-1">
-                <Link href={item.href}>{item.name}</Link>
+              <li className="flex text-center items-center justify-center">
+                <Link
+                  href={item.href}
+                  className="w-full py-2 hover:bg-customBackgroundDarker"
+                >
+                  {item.name}
+                </Link>
               </li>
               <hr className="border-black/20" />
             </ul>
