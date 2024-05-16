@@ -26,7 +26,7 @@ export default function RootLayout({
         <header>
           <Header />
         </header>
-        <main className="bg-customBackgroundLight mx-auto max-w-screen-lg">
+        <main className="bg-customBackgroundLight mx-auto max-w-screen-lg py-4">
           {children}
         </main>
         <footer>
