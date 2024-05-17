@@ -14,9 +14,12 @@ const BookingCalendar = () => {
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
     const isBeforeYesterday = day < yesterday;
+    // todo: furthest is 3 months in advance? - Variable
 
     return isSunday || isBeforeYesterday;
   };
+
+  console.log(date?.toDateString());
 
   return (
     <div className="flex flex-col md:flex-row">
