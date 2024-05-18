@@ -1,5 +1,6 @@
 import React from "react";
 import { dates } from "@/components/Booking/lib/dateUtils";
+import Button from "@/components/Button";
 
 const BookingDates = ({ date }: { date: Date | undefined }) => {
   const bookingDateSelected = date?.toDateString();
@@ -9,11 +10,11 @@ const BookingDates = ({ date }: { date: Date | undefined }) => {
       <h3>{date?.toDateString()}</h3>
 
       {bookingDateSelected && dates[bookingDateSelected] && (
-        <div>
+        <div className="grid grid-cols-3 max-w-sm mx-auto">
           {dates[bookingDateSelected].map((date, index) => (
-            <button key={index} className={`px-2`} disabled={!date.available}>
+            <Button key={index} disabled={!date.available}>
               {date.time}
-            </button>
+            </Button>
           ))}
         </div>
       )}

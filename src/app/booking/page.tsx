@@ -9,6 +9,7 @@ const Page = () => {
 
       <div className="flex flex-col gap-40">
         <div>
+          {/*todo style h2*/}
           <h2>Select Time and Date</h2>
           <BookingCalendar />
         </div>
@@ -17,8 +18,12 @@ const Page = () => {
           <h2>Service Details</h2>
 
           {/* Dropdown List */}
+          {/*todo style booking list dropdown*/}
+          {/*todo change price on option selected*/}
           <BookingList />
 
+          {/*todo style list*/}
+          {/*todo update price on BookingList change*/}
           <ul>
             <li>1 hr</li>
             <li>$10.99</li>

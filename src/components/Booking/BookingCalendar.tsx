@@ -10,7 +10,7 @@ const BookingCalendar = () => {
   const [date, setDate] = React.useState<Date | undefined>(new Date());
 
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row gap-4">
       <Calendar
         mode="single"
         selected={date}

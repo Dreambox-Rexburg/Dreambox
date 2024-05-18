@@ -22,7 +22,7 @@ const generatedDates = getDatesBetween(startDate, endDate);
 
 generatedDates.forEach((date) => {
   dates[date] = [
-    { time: "5:00 pm", available: true },
+    { time: "5:00 pm", available: false },
     { time: "6:00 pm", available: true },
     { time: "7:00 pm", available: true },
     { time: "8:00 pm", available: true },
