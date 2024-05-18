@@ -1,7 +1,6 @@
 import React from "react";
 import BookingCalendar from "@/components/Booking/BookingCalendar";
 import BookingList from "@/components/Booking/BookingList";
-import BookingDates from "@/components/Booking/BookingDates";
 
 const Page = () => {
   return (
