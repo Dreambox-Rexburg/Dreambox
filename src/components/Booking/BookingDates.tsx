@@ -10,23 +10,35 @@ interface Dates {
   [key: string]: DateDetails[];
 }
 
-// TODO: Fix dates ._.
-let startDate = new Date(2024, 4, 17); // May 5, 2024
-let endDate = new Date(2024, 5, 17); // May 10, 2024
-let generatedDates = getDatesBetween(startDate, endDate);
+const dateInAdvance: number = 3;
 
-let dates: Dates = {};
+const startDate = new Date();
+const endDate = new Date(startDate);
+endDate.setMonth(startDate.getMonth() + dateInAdvance);
+const generatedDates = getDatesBetween(startDate, endDate);
+
+const dates: Dates = {};
 
 generatedDates.forEach((date) => {
   dates[date] = [
     { time: "5:00 pm", available: true },
-    { time: "6:00 pm", available: false },
+    { time: "6:00 pm", available: true },
+    { time: "7:00 pm", available: true },
+    { time: "8:00 pm", available: true },
+    { time: "9:00 pm", available: true },
   ];
+
+  if (date.includes("Fri")) {
+    dates[date].push(
+      { time: "10:00pm", available: true },
+      { time: "11:00pm", available: true },
+    );
+  }
+
+  if (date.includes("Sat")) {
+    dates[date].push({ time: "10:00pm", available: true });
+  }
 });
-
-console.log("generatedDates", generatedDates);
-
-console.log("dates", dates);
 
 const BookingDates = ({ date }: { date: Date | undefined }) => {
   const bookingDateSelected = date?.toDateString();
@@ -39,7 +51,7 @@ const BookingDates = ({ date }: { date: Date | undefined }) => {
         <div>
           {dates[bookingDateSelected].map((date, index) => (
             <button key={index} className={`px-2`} disabled={!date.available}>
-              {date.time} {date.available} {index}
+              {date.time}
             </button>
           ))}
         </div>
