@@ -42,6 +42,7 @@ const config = {
         customPrimaryDark: "#414E4E",
         customPrimaryDefault: "#6C8282",
         customPrimaryLight: "#9ABABA",
+        customDisabled: "ffffff",
         // customPrimaryLighter: "#C2D6D6",
 
         // Background Colors
