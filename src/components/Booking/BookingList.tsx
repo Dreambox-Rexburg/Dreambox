@@ -21,7 +21,7 @@ const BookingList = () => {
   );
 
   return (
-    <div className="flex flex-col gap-4 mx-auto max-w-sm">
+    <div className="flex flex-col lg:flex-none lg:h-full gap-4 mx-auto max-w-sm">
       <Select
         required
         value={selectedItem}
@@ -39,11 +39,11 @@ const BookingList = () => {
         </SelectContent>
       </Select>
 
-      <div className="w-full pl-6">
+      <div className="w-full pl-6 lg:mt-auto mb-4">
         <ul className="max-w-xs flex flex-col mx-auto list-disc">
           {/*todo Update time based on event selected - get from... slug? -- [service].page.tsx. Get it from [service] / slug*/}
-          <li>1 hr</li>
           {selectedService && <li>{selectedService.price}</li>}
+          <li>1 hr</li>
         </ul>
       </div>
     </div>
