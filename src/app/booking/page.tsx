@@ -22,12 +22,7 @@ const Page = () => {
             <BookingList />
           </div>
 
-          <div className="w-full pl-6">
-            <ul className="max-w-xs flex flex-col mx-auto list-disc">
-              <li>1 hr</li>
-              <li>$10.99</li>
-            </ul>
-          </div>
+          {/*todo: redirect to checkout :D*/}
           <Button className="mx-auto w-full max-w-sm">Next</Button>
         </div>
       </div>
