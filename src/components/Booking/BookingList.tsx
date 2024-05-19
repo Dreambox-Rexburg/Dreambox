@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import {
-  Listbox,
-  ListboxButton,
-  ListboxOption,
-  ListboxOptions,
-} from "@headlessui/react";
-import { CheckIcon } from "@heroicons/react/20/solid";
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const services = [
   { description: "Group of 1-5" },
@@ -15,24 +15,21 @@ const services = [
 ];
 
 const BookingList = () => {
-  const [selectedService, setSelectedService] = useState(services[0]);
-
   return (
-    <Listbox value={selectedService} onChange={setSelectedService}>
-      <ListboxButton>{selectedService.description}</ListboxButton>
-      <ListboxOptions anchor="bottom">
-        {services.map((service, index) => (
-          <ListboxOption
-            key={index}
-            value={service}
-            className="group flex gap-2 bg-white data-[focus]:bg-blue-100"
-          >
-            <CheckIcon className="invisible size-5 group-data-[selected]:visible" />
-            {service.description}
-          </ListboxOption>
-        ))}
-      </ListboxOptions>
-    </Listbox>
+    <div className="flex mx-auto max-w-sm">
+      <Select required>
+        <SelectTrigger className="w-full bg-customBackgroundDarker">
+          <SelectValue placeholder="Select Group Size" />
+        </SelectTrigger>
+        <SelectContent className="bg-customBackgroundDark">
+          {services.map((service, index) => (
+            <SelectItem key={index} value={service.description}>
+              {service.description}
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
+    </div>
   );
 };
 

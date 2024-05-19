@@ -7,7 +7,7 @@ const BookingDates = ({ date }: { date: Date | undefined }) => {
 
   return (
     <div>
-      <h3>{date?.toDateString()}</h3>
+      <h2 className="text-xl font-semibold py-4">{date?.toDateString()}</h2>
 
       {bookingDateSelected && dates[bookingDateSelected] && (
         <div className="grid grid-cols-3 max-w-sm mx-auto">

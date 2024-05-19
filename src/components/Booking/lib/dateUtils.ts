@@ -31,12 +31,12 @@ generatedDates.forEach((date) => {
 
   if (date.includes("Fri")) {
     dates[date].push(
-      { time: "10:00pm", available: true },
-      { time: "11:00pm", available: true },
+      { time: "10:00 pm", available: true },
+      { time: "11:00 pm", available: true },
     );
   }
 
   if (date.includes("Sat")) {
-    dates[date].push({ time: "10:00pm", available: true });
+    dates[date].push({ time: "10:00 pm", available: true });
   }
 });
