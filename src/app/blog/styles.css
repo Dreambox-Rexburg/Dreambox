@@ -1,0 +1,64 @@
+/* styles.css */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;  /* Center the grid */
+}
+
+.blog-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Needed for overlay positioning */
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+}
+
+.blog-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.blog-container:hover .blog-overlay {
+    opacity: 1;
+}
+
+.blog-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.blog-icons i {
+    color: white;
+    font-size: 20px;
+}
+
+.blog-text {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
