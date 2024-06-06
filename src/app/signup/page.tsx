@@ -4,28 +4,35 @@ import Service from "@/components/Service";
 const Page = () => {
     return (
         <div>
-            <h2>Sign up Page</h2>
-            <form action="/account/register" method="post" id="login">
-                <div>
-                    <label>First Name</label>
-                    <input type="text" name="account_firstname" id="firstname" required placeholder="Enter your first name" />
-                </div>
-                <div>
-                    <label>Last Name</label>
-                    <input type="text" name="account_lastname" id="lastname" required placeholder="Enter your last name" />
-                </div>
-                <div>
-                    <label>Email</label>
-                    <input type="email" name="account_email" id="email" required placeholder="Enter a valid email address" />
-                </div>
-                <div>
-                    <label>Password</label>
-                    <input type="password" name="password" id="password" required placeholder="Enter a valid password" />
-                </div>
-                <div>
-                    <input type="submit" value="Create Account" id="button"/>
-                </div>
-            </form>
+            <h2 className="text-center text-4xl font-semibold pt-2">Sign up Page</h2>
+            <div className="flex flex-col mx-auto justify-center">
+                <form action="/account/register" method="post" id="login" className="flex flex-col mx-auto justify-center">
+                    <div className="flex flex-col mt-8">
+                        <label>First Name</label>
+                        <input type="text" name="account_firstname" id="firstname" required 
+                        className="bg-customBackgroundDark rounded-md p-3 my-1"
+                        />
+                    </div>
+                    <div className="flex flex-col mt-8">
+                        <label>Last Name</label>
+                        <input type="text" name="account_lastname" id="lastname" required 
+                        className="bg-customBackgroundDark rounded-md p-3 my-1" />
+                    </div>
+                    <div className="flex flex-col mt-8">
+                        <label>Email</label>
+                        <input type="email" name="account_email" id="email" required
+                        className="bg-customBackgroundDark rounded-md p-3 my-1" />
+                    </div>
+                    <div className="flex flex-col mt-8">
+                        <label>Password</label>
+                        <input type="password" name="password" id="password" required
+                        className="bg-customBackgroundDark rounded-md p-3 my-1" />
+                    </div>
+                    <div className="mx-auto my-8">
+                        <input type="submit" value="Create Account" id="button" className="text-sm py-1.5 px-2 font-bold rounded-3xl border-2 bg-customPrimaryDefault text-white hover:border-customPrimaryDark"/>
+                    </div>
+                </form>
+            </div>
         </div>
 
     );
