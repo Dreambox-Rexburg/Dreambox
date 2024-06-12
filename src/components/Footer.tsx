@@ -1,11 +1,13 @@
 import SocialMediaIcons from "@/components/SocialMediaIcons";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <div className="bg-customBackgroundDarker">
       <div className="px-6 lg:px-2 py-8 flex flex-col gap-8 text-center md:text-left font-bold items-center md:items-start md:grid md:grid-cols-2 max-w-screen-lg mx-auto">
         <div className="flex flex-col gap-3.5 items-center md:items-start md:text-left w-full">
-          <p>&copy; 2024 DreamBox. All rights reserved.</p>
+          <p>&copy; {year} DreamBox. All rights reserved.</p>
           <p>(208) 541-9116</p>
           <div className="hidden md:block">
             <SocialMediaIcons />

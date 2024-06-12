@@ -41,19 +41,15 @@
 
 // export default BlogGrid;
 
-
-
-import React from 'react';
-import Cards from './BCards';  // Adjust the path as necessary
+import React from "react";
+import Cards from "./BCards"; // Adjust the path as necessary
 
 const App = () => {
-    return (
-        <div>
-            <Cards />
-        </div>
-    );
-}
+  return (
+    <div>
+      <Cards />
+    </div>
+  );
+};
 
 export default App;
-
-
