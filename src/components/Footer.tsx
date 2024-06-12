@@ -1,7 +1,7 @@
 import SocialMediaIcons from "@/components/SocialMediaIcons";
 
 export default function Footer() {
-  const year = new Date().getFullYear()
+  const year = new Date().getFullYear();
 
   return (
     <div className="bg-customBackgroundDarker">
