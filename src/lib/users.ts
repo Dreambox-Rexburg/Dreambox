@@ -7,7 +7,7 @@ export async function RegisterUser({
                                        email,
                                        password,
                                    }: { firstName: string, lastName: string, email: string, password: string }) {
-    const existingUser = await db.users.findUnique({where: {email}});
+    const existingUser = await db.users.findFirst({where: {email}});
 
     const passwordHash: string = await hash(password, 10);
 
